@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 
 <!--- - 👨‍💻 All of my projects are available at **[My Portfolio](https://jaiswalprabhakar.github.io)** -->
 
-- 📫 How to reach me **[Mail](ritikbharti4388@gmail.com)**
+- 📫 How to reach me **<a href = "mailto:ritikbharti43884@gmail.com">Mail</a>**
 
 ## 🚀 Languages and Tools:
   - **JavaScript**
