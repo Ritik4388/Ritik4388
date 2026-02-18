@@ -14,7 +14,6 @@ Here are some ideas to get you started:
 -->
 
 <h1 align="center">Hi there👋, I'm Ritik</h1>
-<h3 align="center">Fullstack Web Developer</h3>
 
 
 ## 🙋‍♂️ About Me
