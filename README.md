@@ -1,41 +1,118 @@
-<h2 align="center">Hi, I'm Ritik</h2>
-<p align="center">M.Tech Microelectronics, IIIT Allahabad · RTL Design | Design Verification | Physical Design </p>
+<h1 align="center">Hi, I'm Ritik 👋</h1>
+<p align="center">
+  <b>M.Tech Microelectronics · IIIT Allahabad</b><br>
+  RTL Design · Design Verification · Physical Design
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/ritik-bharti"><img src="https://img.shields.io/badge/LinkedIn-ritik--bharti-0A66C2?style=for-the-badge"/></a>
+  <a href="mailto:ritikbharti4388@gmail.com"><img src="https://img.shields.io/badge/Email-ritikbharti4388-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</p>
 
 ---
 
-I like working on chips from RTL all the way to layout. Most of my recent work is on RISC-V cores: designing them in SystemVerilog, verifying them against reference models, and taking them through synthesis, place and route and sign-off with the Cadence tools. I also build UVM testbenches for clock-domain-crossing designs and full SoCs.
+I work on digital design across the whole flow, from RTL and verification to physical design and sign-off. RISC-V is where I’ve spent most of my time.
 
-### Projects
+## 🚀 Projects
 
-**[RV32I 5-Stage Pipelined RISC-V Core: RTL to GDSII](https://github.com/Ritik4388/RV32I-PIPELINED-RTL-TO-GDSII)**
-- 5-stage pipeline with forwarding, hazard detection and a 64-entry branch predictor (CPI 1.64 → 1.11)
-- Verified against Spike with directed and riscv-dv random tests, on RTL and gate-level netlists
-- SKY130 at 50 MHz on a 1.02 × 1.01 mm die, setup +0.33 ns, hold +0.16 ns, clean DRC, LVS and LEC
-- Power integrity: 28 mW total, static IR drop under 0.5% of VDD, no EM violations
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**[Asynchronous FIFO with UVM Verification]([your-repo-link])**
-- Dual-clock FIFO in SystemVerilog with Gray-code pointers, 2-flop synchronizers and registered full/empty flags
-- UVM testbench with separate write and read agents (one per clock domain) and a queue-based scoreboard
-- Corner cases: write when full, read when empty, simultaneous read/write, pointer wrap-around and reset during traffic
-- Tested at several write/read clock ratios (fast-write/slow-read and the reverse)
-- SVA for overflow/underflow protection and single-bit Gray pointer transitions; 100% functional coverage
+### [RV32I Pipelined Core: RTL → GDSII](https://github.com/Ritik4388/RV32I-PIPELINED-RTL-TO-GDSII)
+5-stage RV32I core with forwarding, hazard detection and a branch predictor, verified against Spike with riscv-dv on RTL and gate-level netlists. Taken through full Cadence flow on SKY130 with clean timing, IR/EM, DRC, LVS and LEC sign-off.
 
-**[RISCFORGE: RISC-V SoC - RTL to Tapeout](https://github.com/Ritik4388/RISCFORGE_1TOPS)** (VSI 1TOPS)
-- 5-stage RV32IM core with an AXI-Lite bus, APB bridge and UART, GPIO, SPI, I2C and timer peripherals
-- UVM testbenches for the ALU, decoder and hazard unit with constrained-random stimulus, a reference model from the RISC-V spec and 100% code coverage
-- Working on SoC-level tests for the UART, GPIO and peripheral registers, where small programs run on the core and UVM agents act as the devices outside the chip
-- Found and fixed pipeline hazard and illegal-instruction bugs in the core
+<img src="https://img.shields.io/badge/CPI-1.64%20→%201.11-2ea44f?style=flat-square"/> <img src="https://img.shields.io/badge/SKY130-50%20MHz-2ea44f?style=flat-square"/> <img src="https://img.shields.io/badge/Power-28%20mW-2ea44f?style=flat-square"/>
 
-### Skills
+</td>
+<td width="50%" valign="top">
 
-**Design:** RTL design, pipelined CPU microarchitecture, clock domain crossing (CDC), synchronizers, async FIFOs
-**Verification:** UVM, SVA, functional and code coverage, constrained-random stimulus, scoreboards and reference models, SoC-level testing, register testing, Spike, riscv-dv, gate-level simulation
-**Protocols and peripherals:** AXI-Lite, APB, UART, SPI, I2C, GPIO
-**Physical design:** synthesis, floorplanning, power planning, placement, CTS, routing, STA, IR drop and EM, DRC/LVS, LEC
-**Tools:** Cadence Genus, Innovus, Tempus, Voltus, Conformal LEC, PVS, Virtuoso, Xcelium, IMC
-**Languages:** Verilog, SystemVerilog, RISC-V assembly, Tcl, Python, Make
+### [Async FIFO with UVM](your-repo-link)
+Dual-clock FIFO with Gray-code pointers and 2-flop synchronizers, verified with a two-agent UVM testbench, scoreboard and SVA. Covers full/empty, wrap-around, mid-traffic reset and multiple clock ratios.
 
-### Contact
+<img src="https://img.shields.io/badge/Coverage-100%25-1f6feb?style=flat-square"/> <img src="https://img.shields.io/badge/CDC-Gray%20code-1f6feb?style=flat-square"/> <img src="https://img.shields.io/badge/UVM-SVA-1f6feb?style=flat-square"/>
 
-<a href="https://www.linkedin.com/in/ritik-bharti">LinkedIn</a> · <a href="mailto:ritikbharti43884@gmail.com">Email</a>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
 
+### [RISCFORGE: RV32IM SoC, RTL → Tapeout](https://github.com/Ritik4388/RISCFORGE_1TOPS) · *VSI 1TOPS*
+RV32IM SoC with an AXI-Lite bus, APB bridge and UART, GPIO, SPI, I2C and timer peripherals. I built the UVM block-level testbenches and SoC tests that run RISC-V programs on the core, catching pipeline-hazard and illegal-instruction bugs.
+
+<img src="https://img.shields.io/badge/Code%20Coverage-100%25-8957e5?style=flat-square"/> <img src="https://img.shields.io/badge/Bus-AXI--Lite%20%7C%20APB-8957e5?style=flat-square"/> <img src="https://img.shields.io/badge/Peripherals-UART%20%7C%20SPI%20%7C%20I2C%20%7C%20GPIO-8957e5?style=flat-square"/>
+
+</td>
+</tr>
+</table>
+
+## 🛠️ Skills
+
+<table>
+<tr>
+<td><b>Design</b></td>
+<td>
+<img src="https://img.shields.io/badge/-RTL%20Design-8957e5?style=flat-square"/>
+<img src="https://img.shields.io/badge/-RISC--V%20Microarchitecture-8957e5?style=flat-square"/>
+<img src="https://img.shields.io/badge/-CDC-8957e5?style=flat-square"/>
+<img src="https://img.shields.io/badge/-AXI--Lite-8957e5?style=flat-square"/>
+<img src="https://img.shields.io/badge/-APB-8957e5?style=flat-square"/>
+<img src="https://img.shields.io/badge/-UART-8957e5?style=flat-square"/>
+<img src="https://img.shields.io/badge/-SPI-8957e5?style=flat-square"/>
+<img src="https://img.shields.io/badge/-I2C-8957e5?style=flat-square"/>
+</td>
+</tr>
+<tr>
+<td><b>Verification</b></td>
+<td>
+<img src="https://img.shields.io/badge/-UVM-1f6feb?style=flat-square"/>
+<img src="https://img.shields.io/badge/-SVA-1f6feb?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Functional%20Coverage-1f6feb?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Constrained%20Random-1f6feb?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Scoreboards-1f6feb?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Spike-1f6feb?style=flat-square"/>
+<img src="https://img.shields.io/badge/-riscv--dv-1f6feb?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Gate--Level%20Sim-1f6feb?style=flat-square"/>
+</td>
+</tr>
+<tr>
+<td><b>Physical Design</b></td>
+<td>
+<img src="https://img.shields.io/badge/-Synthesis-2ea44f?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Floorplan%20%26%20Power%20Plan-2ea44f?style=flat-square"/>
+<img src="https://img.shields.io/badge/-CTS-2ea44f?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Place%20%26%20Route-2ea44f?style=flat-square"/>
+<img src="https://img.shields.io/badge/-STA-2ea44f?style=flat-square"/>
+<img src="https://img.shields.io/badge/-IR%20Drop%20%26%20EM-2ea44f?style=flat-square"/>
+<img src="https://img.shields.io/badge/-DRC%20%7C%20LVS%20%7C%20LEC-2ea44f?style=flat-square"/>
+</td>
+</tr>
+<tr>
+<td><b>Cadence Tools</b></td>
+<td>
+<img src="https://img.shields.io/badge/-Genus-b31b1b?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Innovus-b31b1b?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Tempus-b31b1b?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Voltus-b31b1b?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Conformal%20LEC-b31b1b?style=flat-square"/>
+<img src="https://img.shields.io/badge/-PVS-b31b1b?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Virtuoso-b31b1b?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Xcelium-b31b1b?style=flat-square"/>
+<img src="https://img.shields.io/badge/-IMC-b31b1b?style=flat-square"/>
+</td>
+</tr>
+<tr>
+<td><b>Languages</b></td>
+<td>
+<img src="https://img.shields.io/badge/-SystemVerilog-555?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Verilog-555?style=flat-square"/>
+<img src="https://img.shields.io/badge/-RISC--V%20Assembly-555?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Tcl-555?style=flat-square"/>
+<img src="https://img.shields.io/badge/-Python-555?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Make-555?style=flat-square"/>
+</td>
+</tr>
+</table>
+
+---
+<p align="center"><i>Always happy to talk about RISC-V, verification or tapeouts. Feel free to reach out!</i></p>
