@@ -1,5 +1,5 @@
 <h2 align="center">Hi, I'm Ritik</h2>
-<p align="center">M.Tech Microelectronics, IIIT Allahabad · Physical Design and Verification</p>
+<p align="center">M.Tech Microelectronics, IIIT Allahabad · RTL Design | Design Verification | Physical Design </p>
 
 ---
 
