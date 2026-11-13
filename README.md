@@ -1,79 +1,45 @@
-<!--
-**Ritik4388/Ritik4388** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h2 align="center">Hi, I'm Ritik</h2>
+<p align="center">M.Tech Microelectronics, IIIT Allahabad · Physical Design and Verification</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I like working on chips from RTL all the way to layout. Most of my recent work is on RISC-V cores: designing them in SystemVerilog, verifying them against reference models, and taking them through synthesis, place and route and sign-off with the Cadence tools. I also build UVM testbenches for clock-domain-crossing designs and full SoCs.
 
-<h1 align="center">Hi there👋, I'm Ritik</h1>
+### Projects
 
+**[RV32I 5-Stage Pipelined RISC-V Core: RTL to GDSII](https://github.com/Ritik4388/RV32I-PIPELINED-RTL-TO-GDSII)**
+- 5-stage pipeline with forwarding, hazard detection and a 64-entry branch predictor (CPI 1.64 → 1.11)
+- Verified against Spike with directed and riscv-dv random tests, on RTL and gate-level netlists
+- SKY130 at 50 MHz on a 1.02 × 1.01 mm die, setup +0.33 ns, hold +0.16 ns, clean DRC, LVS and LEC
+- Power integrity: 28 mW total, static IR drop under 0.5% of VDD, no EM violations
 
-## 🙋‍♂️ About Me
+**[Asynchronous FIFO with UVM Verification]([your-repo-link])**
+- Dual-clock FIFO in SystemVerilog with Gray-code pointers, 2-flop synchronizers and registered full/empty flags
+- UVM testbench with separate write and read agents (one per clock domain) and a queue-based scoreboard
+- Corner cases: write when full, read when empty, simultaneous read/write, pointer wrap-around and reset during traffic
+- Tested at several write/read clock ratios (fast-write/slow-read and the reverse)
+- SVA for overflow/underflow protection and single-bit Gray pointer transitions; 100% functional coverage
 
-<img align="right" width="50%" height="50%" src="./assets/img/coding.gif" height="175px"/>
+**[RISCFORGE: RV32IM RISC-V SoC](https://github.com/Ritik4388/RISCFORGE_1TOPS)** (team project)
+- 5-stage RV32IM core with an AXI-Lite bus, APB bridge and UART, GPIO, SPI, I2C and timer peripherals
+- UVM testbenches for the ALU, decoder and hazard unit with constrained-random stimulus, a reference model from the RISC-V spec and 100% code coverage
+- Working on SoC-level tests for the UART, GPIO and peripheral registers, where small programs run on the core and UVM agents act as the devices outside the chip
+- Found and fixed pipeline hazard and illegal-instruction bugs in the core
 
-<!--- - 🔭 I’m currently working on **[Robocon 2022](http://www.ddrobocon.in/)** -->
+### Skills
 
+**Design:** RTL design, pipelined CPU microarchitecture, clock domain crossing (CDC), synchronizers, async FIFOs
+**Verification:** UVM, SVA, functional and code coverage, constrained-random stimulus, scoreboards and reference models, SoC-level testing, register testing, Spike, riscv-dv, gate-level simulation
+**Protocols and peripherals:** AXI-Lite, APB, UART, SPI, I2C, GPIO
+**Physical design:** synthesis, floorplanning, power planning, placement, CTS, routing, STA, IR drop and EM, DRC/LVS, LEC
+**Tools:** Cadence Genus, Innovus, Tempus, Voltus, Conformal LEC, PVS, Virtuoso, Xcelium, IMC
+**Languages:** Verilog, SystemVerilog, RISC-V assembly, Tcl, Python, Make
 
-<!--- - 🌱 I’m currently learning **Docker and jenkins** -->
+### Contact
 
-- 👯 I’m looking to collaborate on **OpenSource Projects**
-
-<!--- - 👨‍💻 All of my projects are available at **[My Portfolio](https://jaiswalprabhakar.github.io)** -->
-
-- 📫 How to reach me **<a href = "mailto:ritikbharti43884@gmail.com">Mail</a>**
-
-## 🚀 Languages and Tools:
-  - **JavaScript**
-  - **TypeScript**
-  - **HTML/CSS**
-  - **C++**
-  - **ReactJS**
-  - **NodeJS**
-  - **ExpressJS**
-  - **FastAPI**
-  - **Pyhton**
-  - **NextJS**
-<br/>
+<a href="https://www.linkedin.com/in/ritik-bharti">LinkedIn</a> · <a href="mailto:ritikbharti43884@gmail.com">Email</a>
 
 <p align="center">
-    <a href="https://github.com/Ritik4388/github-readme-streak-stats">
-        <img title="Ritik's streak" alt="" src="https://github-readme-streak-stats.herokuapp.com/?user=Ritik4388&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"/>
-    </a>
+  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Ritik4388&show_icons=true&hide_border=true&theme=react&bg_color=0D1117" height="150"/>
+  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ritik4388&layout=compact&hide_border=true&theme=react&bg_color=0D1117" height="150"/>
 </p>
-
-## 📊 My Github Stats
-
-  <br/>
-  <p align="center>
-    <a href="https://github.com/Ritik4388/github-readme-stats">
-        <img alt="Ritik's Github Stats" src="https://github-readme-stats.vercel.app/api?username=Ritik4388&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" />
-        <img alt="Ritik's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ritik4388&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117" />
-    </a>
-  </p>
-<!---  <a href="https://github.com/Ritik4388/github-readme-stats"><img alt="Ritik's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ritik4388&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117" /></a> -->
-
-<!--- <a href="https://github.com/Ritik4388/github-readme-activity-graph"><img alt="Ritik's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=Ritik4388&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" /></a> -->
-
-## Connect with me:
-<p align="left">
-
-<a href = "https://www.linkedin.com/in/ritik-bharti"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a>
-<a href = "mailto:ritikbharti43884@gmail.com"><img src="https://img.icons8.com/color/48/000000/gmail-new.png"/></a>
-
-
-</p>
-
-## ❤ Views and Followers
-<a href="">
-    <img src="https://komarev.com/ghpvc/?username=Ritik4388">
-</a>
-<a href="https://github.com/Ritik4388?tab=followers"><img src="https://img.shields.io/github/followers/Ritik4388?label=Followers&style=social" alt="GitHub Badge"></a>
