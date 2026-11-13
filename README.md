@@ -20,7 +20,7 @@ I like working on chips from RTL all the way to layout. Most of my recent work i
 - Tested at several write/read clock ratios (fast-write/slow-read and the reverse)
 - SVA for overflow/underflow protection and single-bit Gray pointer transitions; 100% functional coverage
 
-**[RISCFORGE: RV32IM RISC-V SoC](https://github.com/Ritik4388/RISCFORGE_1TOPS)** (team project)
+**[RISCFORGE: RISC-V SoC - RTL to Tapeout](https://github.com/Ritik4388/RISCFORGE_1TOPS)** (VSI 1TOPS)
 - 5-stage RV32IM core with an AXI-Lite bus, APB bridge and UART, GPIO, SPI, I2C and timer peripherals
 - UVM testbenches for the ALU, decoder and hazard unit with constrained-random stimulus, a reference model from the RISC-V spec and 100% code coverage
 - Working on SoC-level tests for the UART, GPIO and peripheral registers, where small programs run on the core and UVM agents act as the devices outside the chip
