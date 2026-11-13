@@ -40,6 +40,8 @@ I like working on chips from RTL all the way to layout. Most of my recent work i
 <a href="https://www.linkedin.com/in/ritik-bharti">LinkedIn</a> · <a href="mailto:ritikbharti43884@gmail.com">Email</a>
 
 <p align="center">
-  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Ritik4388&show_icons=true&hide_border=true&theme=react&bg_color=0D1117" height="150"/>
-  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ritik4388&layout=compact&hide_border=true&theme=react&bg_color=0D1117" height="150"/>
+  ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-UVM%20%7C%20SVA-1f6feb?style=for-the-badge)
+![Cadence](https://img.shields.io/badge/Cadence-Genus%20%7C%20Innovus%20%7C%20Tempus-c00?style=for-the-badge)
+![RISC--V](https://img.shields.io/badge/RISC--V-RV32I%20%7C%20RV32IM-283272?style=for-the-badge)
+![SKY130](https://img.shields.io/badge/PDK-SKY130-2ea44f?style=for-the-badge)
 </p>
